@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+
+}
+
+.total {
+  border: 3px solid #fff;
+    background-size: auto;
+    flex-direction: column;
+    background-color: #fff3;
+    border-radius: 7px;
+    padding: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 5px
+}
+    
+
+button {
+    cursor: pointer;
+}
+button:active {
+    opacity: 0.8 ;
+}
+button[disabled] {
+    opacity: 0.8;
+}
+
+.clear {
+    background: transparent;
+    border: none;
+    color: orange ;
+    border-radius: 10px ;
+}
+.solid {
+    background: black;
+    border: none;
+    color: white;
+  border-radius: 7px ;
+}
+.outline {
+    background: transparent;
+    color: white;
+    border: 1px solid black;
+    background-color: #FFA500 ;
+    border-radius: 7px ;
+   
+}
+
+.error {
+    color: #b81414 ;
+    display: none;
+}

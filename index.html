@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Teste de login</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+            <link rel="stylesheet" type="text/css" href="style.css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" href="main.css">
+         <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="CSS/index.css">
+<link rel="stylesheet" href="CSS/global.css">
+
+<script src="JS/index.js"></script>
+<script src="JS/validations.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+<script>
+      const firebaseConfig = {
+  apiKey: "AIzaSyAWHibNP1ICXW4pH2rqXm45BkCMvmi49Ow",
+  authDomain: "tvfootbal-533c3.firebaseapp.com",
+  databaseURL: "https://tvfootbal-533c3-default-rtdb.firebaseio.com",
+  projectId: "tvfootbal-533c3",
+  storageBucket: "tvfootbal-533c3.appspot.com",
+  messagingSenderId: "190818657362",
+  appId: "1:190818657362:web:005df769ed62caaa1d2b8b",
+  measurementId: "G-CTTPV98VM1"
+};
+
+ firebase.initializeApp(firebaseConfig);
+
+</script>
+
+  </head>
+  
+  <body class="container">
+
+  
+    <form class="total">
+        <div class="form-field">
+            <div><label>Email</label></div>
+            <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()"/>
+            <div class="error" id="email-required-error">Email é obrigatório</div>
+            <div class="error" id="email-invalid-error">Email é inválido</div>
+        </div>
+        <div class="form-field">
+            <div><label>Senha</label></div>
+            <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()"/>
+            <div class="error" id="password-required-error">Senha é obrigatória</div>
+        </div>
+        <div>
+            <button type="button" class="clear" id="recover-password-button" disabled="true">Recuperar senha</button>
+        </div>
+        <div>
+            <button type="button" class="solid" id="login-button" disabled="true" onclick="login()">Entrar</button>
+        </div>
+        <div>
+            <button type="button" class="outline" onclick="register()">Registrar</button>
+        </div>
+    </form>
+</body>
+
+</html>

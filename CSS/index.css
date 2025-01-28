@@ -1,0 +1,36 @@
+body {
+  height: 200vh;
+    width: 100%;
+  display: table ;
+    background-image: url('../img/fundo.jpg') ;
+    background-position: 30% 45%;
+  padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form {
+    width: 350px;
+    
+}
+input {
+    
+    border: 10px ;
+    border-radius: 40px ;
+}
+
+input,
+button {
+   padding: 9px;
+   width: -webkit-fill-available;
+   
+}
+button {
+    margin-bottom: 10px;
+}
+
+.form-field {
+    margin-bottom: 10px;
+    color: white ;
+}

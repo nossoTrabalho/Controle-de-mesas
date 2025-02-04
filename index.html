@@ -21,47 +21,44 @@
 <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
 <script>
       const firebaseConfig = {
-  apiKey: "AIzaSyAWHibNP1ICXW4pH2rqXm45BkCMvmi49Ow",
-  authDomain: "tvfootbal-533c3.firebaseapp.com",
-  databaseURL: "https://tvfootbal-533c3-default-rtdb.firebaseio.com",
-  projectId: "tvfootbal-533c3",
-  storageBucket: "tvfootbal-533c3.appspot.com",
-  messagingSenderId: "190818657362",
-  appId: "1:190818657362:web:005df769ed62caaa1d2b8b",
-  measurementId: "G-CTTPV98VM1"
+        apiKey: "AIzaSyABWR3JXH8GDkh6JBbqAqPop--LAuSTvuo",
+  authDomain: "controldemesas-1b337.firebaseapp.com",
+  projectId: "controldemesas-1b337",
+  storageBucket: "controldemesas-1b337.firebasestorage.app",
+  messagingSenderId: "592361217191",
+  appId: "1:592361217191:web:a48028335e380e7c8d8f82",
+  measurementId: "G-X545CY1N6M"
 };
 
  firebase.initializeApp(firebaseConfig);
 
 </script>
 
-  </head>
-  
-  <body class="container">
+</head>
 
-  
-    <form class="total">
-        <div class="form-field">
-            <div><label>Email</label></div>
-            <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()"/>
-            <div class="error" id="email-required-error">Email é obrigatório</div>
-            <div class="error" id="email-invalid-error">Email é inválido</div>
-        </div>
-        <div class="form-field">
-            <div><label>Senha</label></div>
-            <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()"/>
-            <div class="error" id="password-required-error">Senha é obrigatória</div>
-        </div>
-        <div>
-            <button type="button" class="clear" id="recover-password-button" disabled="true">Recuperar senha</button>
-        </div>
-        <div>
-            <button type="button" class="solid" id="login-button" disabled="true" onclick="login()">Entrar</button>
-        </div>
-        <div>
-            <button type="button" class="outline" onclick="register()">Registrar</button>
-        </div>
-    </form>
+<body class="container">
+
+
+  <form class="total">
+      <div class="form-field">
+          <div><label>Email</label></div>
+          <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()"/>
+          <div class="error" id="email-required-error">Email é obrigatório</div>
+          <div class="error" id="email-invalid-error">Email é inválido</div>
+      </div>
+      <div class="form-field">
+          <div><label>Senha</label></div>
+          <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()"/>
+          <div class="error" id="password-required-error">Senha é obrigatória</div>
+      </div>
+      <div>
+          <button type="button" class="clear" id="recover-password-button" disabled="true"></button>
+      </div>
+      <div>
+          <button type="button" class="solid" id="login-button" disabled="true" onclick="login()">Entrar</button>
+      </div>
+     
+  </form>
 </body>
 
 </html>

@@ -26,9 +26,7 @@ function getErrorMessage(error) {
     return error.message;
 }
 
-function register() {
-   window.location.href = "pages/register/register.html";
-}
+
 
 
 

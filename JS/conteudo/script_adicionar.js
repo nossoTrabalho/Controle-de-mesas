@@ -86,7 +86,7 @@ function cadastrarProduto(nomeProduto, codProduto, quantidadeDesejada, precoUnit
         // Não é necessário recarregar a página após cadastrar o produto
 
         // Agora, redirecione para a página de estoque
-        window.location.href = "verEstoque.html";
+        window.location.href = "https://nossotrabalho.github.io/Controle-de-mesas/pages/conteudo/VerEstoque.html";
     } else {
         alert("A versão do seu navegador é muito antiga. Por isso, não será possível executar essa aplicação");
     }

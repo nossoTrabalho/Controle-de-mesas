@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/conteudo/style_produto.css">
+    <link rel="stylesheet" href="../../CSS/conteudo/style_cadastro.css">
+    <title>Produtos</title>
+   <script src="../../JS/conteudo/script_conteudo.js">  </script>
+   <script src="../../JS/conteudo/script_adicionar.js"> </script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav_bar">
+            <div class="logo">
+                <h1>Produtos</h1>
+            </div>
+            <div class="nav_list">
+                <ul>
+                    <li class="nav_item"><a href="../home.html" class="nav_link">Início</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Mesas</a></li>
+                    <li class="nav_item"><a href="#" class="active">Produtos</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile_menu_icon">
+                <button onclick="menuShow()"><img class="icon" src="../../img/menu.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile_menu">
+            <ul>
+                <li class="nav_item"><a href="../home.html" class="nav_link">Início</a></li>
+                <li class="nav_item"><a href="#" class="nav_link">Mesas</a></li>
+                <li class="nav_item"><a href="#" class="active">Produtos</a></li>
+            </ul>
+        </div>
+    </header>
+         <br>
+
+        <div class="container">
+            <body onload="carregarTotalEstoque('totalEstoque')">
+                <h1>Cadastro de Produtos</h1>
+                
+                <!-- Formulário de Cadastro de Produtos -->
+                <form>
+                    <label for="txtNomeProduto">Nome do Produto:</label>
+                    <input type="text" id="txtNomeProduto" required><br><br>
+            
+                    <label for="quantidadeDesejada">Quantidade Desejada:</label>
+                    <input type="number" id="quantidadeDesejada" required><br><br>
+                    
+                    <label for="txtValorProduto">Valor do Produto (R$):</label>
+                    <input type="number" id="txtValorProduto" step="0.01" required><br><br>
+            
+                    <label for="dataFabricacao">Data de Fabricação:</label>
+                    <input type="date" id="dataFabricacao" required><br><br>
+                    
+                    <label for="dataValidade">Data de Validade:</label>
+                    <input type="date" id="dataValidade" required><br><br>
+            
+                    <label for="txtDescricaoProduto">Descrição do Produto:</label>
+                    <textarea id="txtDescricaoProduto" rows="4" cols="50"></textarea><br><br>
+            
+                    <!-- Novos campos adicionados -->
+            
+                    <label for="txtCodProduto" style="display: none;">Código do Produto:</label>
+                    <input type="text" id="txtCodProduto" readonly style="display: none;"><br><br>
+                    
+                    <input type="button" value="Cadastrar Produto" onclick="cadastrarProduto(
+                        document.getElementById('txtNomeProduto').value,
+                        document.getElementById('txtCodProduto').value,
+                        parseInt(document.getElementById('quantidadeDesejada').value),
+                        parseFloat(document.getElementById('txtValorProduto').value),
+                        document.getElementById('dataFabricacao').value,
+                        document.getElementById('dataValidade').value,
+                        document.getElementById('txtDescricaoProduto').value
+                    )">
+                    
+            
+                    <input type="button" value="Ver estoque" class="alinhaBtns" onclick="window.open('verEstoque.html','_self')">
+                    <input type="reset" value="Limpar" class="alinhaBtns">
+                </form>
+            
+                <br>
+                <p>Total de Produtos em Estoque: <span id="totalEstoque">0</span></p>
+        
+        </div>
+       
+</body>
+
+</html>

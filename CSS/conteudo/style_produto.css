@@ -16,11 +16,8 @@ header {
     border-radius: 5px;
     width: 100px;
     background-color: white;
-    font-size: 1.15rem;
-    font-weight: 400;
-
-}
     
+}
 
 .nav_bar {
     display: flex;
@@ -81,6 +78,51 @@ header {
     display: none;
 }
 
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
 @media screen and (max-width: 730px) {
     .nav_bar {
         padding: 1.5rem 4rem;
@@ -88,12 +130,6 @@ header {
     .nav_item {
         display: none;
     }
-    .active {
-        display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
     .mobile_menu_icon {
         display: block;
     }
@@ -102,11 +138,8 @@ header {
         border: none;
         cursor: pointer;
     }
-    .active {
-       
-    }
     .mobile_menu ul {
-        
+       
     }
     .mobile_menu .nav_item {
         display: block;

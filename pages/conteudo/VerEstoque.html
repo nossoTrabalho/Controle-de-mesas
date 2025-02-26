@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/conteudo/style_produto.css">
+    <link rel="stylesheet" href="../../CSS/conteudo/style_cadastro.css">
+    <title>Produtos</title>
+   <script src="../../JS/conteudo/script_conteudo.js">  </script>
+   <script src="../../JS/conteudo/script_adicionar.js"> </script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav_bar">
+            <div class="logo">
+                <h1>Produtos</h1>
+            </div>
+            <div class="nav_list">
+                <ul>
+                    <li class="nav_item"><a href="../home.html" class="nav_link">Início</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Mesas</a></li>
+                    <li class="nav_item"><a href="#" class="active">Produtos</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile_menu_icon">
+                <button onclick="menuShow()"><img class="icon" src="../../img/menu.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile_menu">
+            <ul>
+                <li class="nav_item"><a href="../home.html" class="nav_link">Início</a></li>
+                <li class="nav_item"><a href="#" class="nav_link">Mesas</a></li>
+                <li class="nav_item"><a href="#" class="active">Produtos</a></li>
+            </ul>
+        </div>
+    </header>
+         <br>
+       <div class="container">
+         <body onload="listarEstoque()">
+            <div class="button-container">
+                <button id="btnLimparEstoque" onclick="limparEstoque()">Limpar Estoque</button>
+            </div>
+            
+            <input type="button" value="Cadastrar Produto" class="alinhaBtns" onclick="window.open('produtos.html','_self')">
+    
+                    <tbody id="tabelaEstoque">
+                    </tbody>
+                </div>
+</body>
+
+</html>

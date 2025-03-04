@@ -46,19 +46,21 @@ button:hover {
 
 /* Tabela de Estoque */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  
+   
+   
 }
 
 th, td {
+    
     border: 1px solid #ccc;
-    padding: 8px;
+    padding: 10px;
     text-align: left;
 }
 
 th {
-    background-color: #f2f2f2;
+   
+    background-color: white;
 }
 
 /* Estilos para o botão de limpar estoque */

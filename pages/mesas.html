@@ -1,35 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesas</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-
-        
-    </style>
+    <link rel="stylesheet" href="../CSS/style_mesas.css">
+    <title>Inicio</title>
+   <script src="../JS/script_mesas.js"></script>
 </head>
+
 <body>
-    <div class="header">Mesas</div>
-    <div class="listview"></div>
+    <header>
+        <nav class="nav_bar">
+            <div class="logo">
+                <h1>Mesas</h1>
+            </div>
+            <div class="nav_list">
+                <ul>
+                    <li class="nav_item"><a href="home.html" class="nav_link">Início</a></li>
+                    <li class="nav_item"><a href="#" class="active">Mesas</a></li>
+                    <li class="nav_item"><a href="conteudo/produtos.html" class="nav_link">Produto</a></li>
+                </ul>
+            </div>
 
-    <script>
-        const listview = document.querySelector('.listview');
-        for (let i = 1; i<=20; i++){       //cria 20 mesas
-            const button =document.createElement('button');
-            button.textContent= 'Mesa ${1}';
-            //button.className= 'button ${Math.random() >0.5 ? 'occupied': 'free' }';
+            <div class="mobile_menu_icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile_menu">
+            <ul>
+                <li class="nav_item"><a href="home.html" class="nav_link">Inicio</a></li>
+                <li class="nav_item"><a href="#" class="active">Mesas</a></li>
+                <li class="nav_item"><a href="conteudo/produtos.html" class="nav_link">Produtos</a></li>
+            </ul>
+        </div>
+    </header>
+         <br>
+    <div class="mesas">
+        <div class="elementos">
+            Mesa 1
+            <input type="button" value="Abrir" class="bot">
+        </div>
+        <div class="elementos">
+            Mesa 2
+            <input type="button" value="Abrir" class="bot">
+        </div>
+        <div class="elementos">
+            Mesa 3
+            <input type="button" value="Abrir" class="bot">
+        </div>
+        <div class="elementos">
+            Mesa 4
+            <input type="button" value="Abrir" class="bot">
+        </div>
+        <div class="elementos">
+            Mesa 5
+            <input type="button" value="Abrir" class="bot">
+        </div>
+        <div class="elementos">
+            Mesa 6
+            <input type="button" value="Abrir" class="bot">
+        </div>
+        <div class="elementos">
+            Mesa 7
+            <input type="button" value="Abrir" class="bot">
+        </div>
+        <div class="elementos">
+            Mesa 8
+            <input type="button" value="Abrir" class="bot">
+        </div>
 
-            //button.addEventListener('click', () => )
+    </div>
+ 
 
-        }
-        
 
-    </script>
 
 
 </body>
+
+</html>
